@@ -3,8 +3,8 @@
 
 A GTFS-based data transit network data standard suitable for dynamic transit modeling.
 
-**version**: 0.1.0  
-**updated**: 17 June 2015  
+**version**: 0.1.1  
+**updated**: 26 July 2016  
 **created**: 17 June 2015  
 **authors**:  
 
@@ -21,6 +21,7 @@ explicit changes please fork the [git repo][repo] and submit a pull request.
 
 ### Changelog
 
+-  `0.1.1`: adds mandatory person trip id: `p-trip_id` to the `trip_list` and optional tour id: `p-tour_id`  
 -  `0.1.0`: initial commit; [Technical Memo Documentation](http://fast-trips.mtc.ca.gov/library/)  
 
 ### Known Issues

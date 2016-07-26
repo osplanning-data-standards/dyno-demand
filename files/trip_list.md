@@ -11,6 +11,7 @@ File MUST contain the following attributes:
 Field         	| Type   	| Description
 --------------	|--------	|--------------------------------------------------------------------------------------------------------
 `person_id`     |int or str | ID that uniquely identifies the traveller. Use 0 (zero) to identify trips that do not have a disaggregate person-record associated with them.
+`p-trip_id`		|int or str | ID that uniquely identifies the trip within a given household/person.  ID MAY be sequential.
 `o_taz`         |int or str | Trip origin zone
 `d_taz`         |int or str | Trip destination zone
 `mode`          |str     	| Trip mode, which must match a valid specification for route choice and the modal hierarchy. 
@@ -52,4 +53,4 @@ File MAY contain the following attributes:
 Optional Fields | Type   		| Description
 --------------	|--------		|--------------------------------------------------------------------------------------------------------
 `pnr_ids`	    | List of int	| Available park and rides.  A comma-delimited list of stations within brackets.  An empty list implies any accessible park and ride can be used. Example: [1219, 3354, 9485]
-
+`p-tour_id`		| int or str	| ID that uniquely identifies the tour within a given household/person.  ID MAY be sequential.
