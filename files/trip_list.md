@@ -11,11 +11,11 @@ File MUST contain the following attributes:
 Field         	| Type   	| Description
 --------------	|--------	|--------------------------------------------------------------------------------------------------------
 `person_id`     |int or str | ID that uniquely identifies the traveller. Use 0 (zero) to identify trips that do not have a disaggregate person-record associated with them.
-`p-trip_id`		|int or str | ID that uniquely identifies the trip within a given household/person.  ID MAY be sequential.
+`person_trip_id`		|int or str | ID that uniquely identifies the trip within a given household/person.  ID MAY be sequential.
 `o_taz`         |int or str | Trip origin zone
 `d_taz`         |int or str | Trip destination zone
 `mode`          |str     	| Trip mode, which must match a valid specification for route choice and the modal hierarchy. 
--				|-	 		|    For transit, the mode should encapsulate access and egress modes.  Example entries include:
+-				|-	 		|    For transit, the mode should encapsulate access and egress modes separated by hyphens.  Example entries include:
 -				|-		 	|    	`walk-local_bus-walk`
 -				|-			|    	`PNR-commuter_rail-walk`
 -				|		 	|    Example main modes:
@@ -38,7 +38,7 @@ Field         	| Type   	| Description
 -				|		 	|    `shopping`
 -				|		 	|    `meal`
 -				|		 	|    `social`
--				|		 	|    `work-based`
+-				|		 	|    `work_based`
 -				|		 	|    `other`
 -				|		 	|    `visitor`
 `departure_time`|HH:MM:SS	| Desired departure time.
@@ -53,4 +53,4 @@ File MAY contain the following attributes:
 Optional Fields | Type   		| Description
 --------------	|--------		|--------------------------------------------------------------------------------------------------------
 `pnr_ids`	    | List of int	| Available park and rides.  A comma-delimited list of stations within brackets.  An empty list implies any accessible park and ride can be used. Example: [1219, 3354, 9485]
-`p-tour_id`		| int or str	| ID that uniquely identifies the tour within a given household/person.  ID MAY be sequential.
+`person_tour_id`		| int or str	| ID that uniquely identifies the tour within a given household/person.  ID MAY be sequential.
