@@ -25,14 +25,6 @@ explicit changes please fork the [git repo][repo] and submit a pull request.
 -  `0.1.1`: adds mandatory person trip id: `p-trip_id` to the `trip_list` and optional tour id: `p-tour_id`  
 -  `0.1.0`: initial commit; [Technical Memo Documentation](http://fast-trips.mtc.ca.gov/library/)  
 
-### Known Issues
-  
-* Trips currently do not relate to tours or trip chains.  Since this is not currently a capability in 
-the dynamic transit model [Fast-Trips](http://github.com/MetropolitanTransportationCommission/fast-trips) 
-for which this format was designed, this is not deemed an immediate issue that needs resolution.
-
-
-
 
 # Specification
 
