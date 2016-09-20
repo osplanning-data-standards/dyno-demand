@@ -1,7 +1,7 @@
 
 ## Dyno-Demand
 
-A GTFS-based data transit network data standard suitable for dynamic transit modeling.
+A travel demand data standard suitable for dynamic network modeling.
 
 **version**: 0.1.2 
 **updated**: 15 August 2016  
