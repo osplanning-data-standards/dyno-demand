@@ -11,7 +11,7 @@ File MUST contain the following attributes:
 
 Field         	| Type   	| Description
 --------------	|--------	|--------------------------------------------------------------------------------------------------------
-`person_id`     |int or str | ID that uniquely identifies the traveller and used to link to `trip_id`.
+`person_id`     |int or str | ID that uniquely identifies the traveller and used to link to `trip_list.txt`.
 `hh_id`         |int or str | Household ID used to link to household information in `household.txt`. Use 0 (zero) to identify people that do not have a disaggregate household record associated with them.
 
 
@@ -20,16 +20,9 @@ File MAY contain the following attributes:
 Optional Fields | Type   	| Description
 --------------	|--------	|--------------------------------------------------------------------------------------------------------
 `age`         	|int		| Age in years.
-`gender`        |str     	| Valid entries:
--				|-		 	|    `male`
--				|-			|    `female`
-`worker_status` |str     	| Valid entries:
--				|		 	|    `unemployed`
--				|		 	|    `full-time`
+`gender`        |str     	| Valid entries: <br> `male` <br> `female`
+`worker_status` |str     	| Valid entries: <br> `unemployed` <br> `full-time`
 `works_at_home` |bool     	| Boolean value for working at home.
 `multiple_jobs` |bool     	| Boolean value for having two or more jobs.
 `transit_pass`	|bool     	| Boolean value for having a transit pass.
-`disability`	|str     	| Disability status.  Valid entries include:
--				|		 	|    `none`
--				|		 	|    `wheelchair`
--				|		 	|    `walker`
+`disability`	|str     	| Disability status.  Valid entries include: <br> `none` <br> `wheelchair` <br> `walker`
