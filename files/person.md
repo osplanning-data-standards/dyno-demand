@@ -21,7 +21,7 @@ Optional Fields | Type   	| Description
 --------------	|--------	|--------------------------------------------------------------------------------------------------------
 `age`         	|int		| Age in years.
 `gender`        |str     	| Valid entries: <br> `male` <br> `female`
-`worker_status` |str     	| Valid entries: <br> `unemployed` <br> `full-time`
+`worker_status` |str     	| Valid entries: <br> `unemployed` <br> `full-time` <br> `part-time`
 `works_at_home` |bool     	| Boolean value for working at home.
 `multiple_jobs` |bool     	| Boolean value for having two or more jobs.
 `transit_pass`	|bool     	| Boolean value for having a transit pass.
